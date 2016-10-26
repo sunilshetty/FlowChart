@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://jsplumbtoolkit.com/demos/toolkit/flowchart-builder/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="">
+        <script async="" src="./jsPlumbToolkit_files/analytics.js">
+		</script>
+		<script src="./jsPlumbToolkit_files/jquery.min.js"></script>
+		<script src="./jsPlumbToolkit_files/jsPlumb-2.1.7.js"></script>
+        <title>Cognizant FlowChart Builder</title>
+        <link href="./jsPlumbToolkit_files/t.css" rel="stylesheet">
+<link href="./jsPlumbToolkit_files/bootstrap.min.css" rel="stylesheet">
+<link href="./jsPlumbToolkit_files/font-awesome.css" rel="stylesheet">
+<link href="./jsPlumbToolkit_files/main.css" rel="stylesheet">
+<link href="./jsPlumbToolkit_files/gollum-template.css" rel="stylesheet">
+        <link rel="stylesheet" href="./jsPlumbToolkit_files/jsPlumbToolkit-defaults.css">
+<link rel="stylesheet" href="./jsPlumbToolkit_files/jsPlumbToolkit-demo.css">
+<link rel="stylesheet" href="./jsPlumbToolkit_files/app.css">
+    </head>
+
+    <body style="zoom: 1;" class="">
+
+        <!-- Fixed navbar -->
+<div class="navbar navbar-top navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header" style="margin-top: -10px;margin-left: -40px;">
+         <h1> Cognizant Flowchart Builder</h1>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+        
+
+        
+
+<!-- content -->
+        <script type="text/x-jtk-templates" src="./jsPlumbToolkit_files/templates.html"></script>
+
+        <div class="jtk-demo-main" id="jtk-demo-flowchart">
+
+            <!-- the node palette -->
+            <div class="sidebar node-palette">
+			
+			<li jtk-node-type="start">
+            <img title="Drag for start" src="./jsPlumbToolkit_files/StartImg.PNG" style="width:50%;margin-bottom:15px;"/></li>
+			<li jtk-node-type="question">
+			 <img title="Drag for start" src="./jsPlumbToolkit_files/Something.PNG" style="width:50%;margin-bottom:15px;"/></li>
+			 <li jtk-node-type="action">
+			 <img title="Drag for start" src="./jsPlumbToolkit_files/MD.PNG" style="width:50%;margin-bottom:15px;"/></li>
+			  <li jtk-node-type="output">
+			  <img title="Drag for start" src="./jsPlumbToolkit_files/DS.PNG" style="width:50%;margin-bottom:15px;"/></li>
+			  <hr style="display: block;margin-top: 0.5em;margin-bottom: 0.5em;margin-left: auto;margin-right: 0px;border-style: inset;border-width: 1px;"/>
+			  Select FlowChart 
+			  <hr style="display: block;margin-top: 0.5em;margin-bottom: 0.5em;margin-left: auto;margin-right: 0px;border-style: inset;border-width: 1px;"/>
+			 <!--  <ul>
+			  
+			  Database Visulaizer
+			  
+			  </ul> -->
+			  </br>
+			  <a href="#" style="float:right">&nbsp;  &nbsp; Hrchl FlowChart</a></br>
+			  <hr style="display: block;margin-top: 0.5em;margin-bottom: 0.5em;margin-left: auto;margin-right: 0px;border-style: inset;border-width: 1px;"/>
+			  <a href="file:///D:/FlowChart/FCDB.htm" style="float:right">&nbsp;  &nbsp; DB FlowChart</a>
+                
+            </div>
+
+            <!-- this is the main drawing area -->
+            <div class="jtk-demo-canvas jtk-surface jsplumb-droppable" id="jsPlumb_2_1">
+                <!-- controls -->
+                <div class="controls">
+                    <i class="fa fa-arrows" mode="pan" title="Pan Mode"></i>
+                    <i class="fa fa-pencil selected-mode" mode="select" title="Select Mode"></i>
+                    <i class="fa fa-home" reset="" title="Zoom To Fit"></i>
+                </div>
+                <!-- miniview -->
+                <div class="miniview jtk-miniview" id="jsPlumb_3_1" style="display: block;"><div class="jtk-miniview-canvas" style="top: 22.4916px; left: -0.020903px; width: 50px; height: 50px; position: relative; transform: scale(0.125418); transform-origin: 0% 0% 0px;"><div class="jtk-miniview-element" jtk-node-id="start" related-node-id="jsPlumb_2_2" id="jsPlumb_3_2" style="top: 50px; left: 50px; width: 100px; height: 70px; position: absolute;"></div><div class="jtk-miniview-element" jtk-node-id="question1" related-node-id="jsPlumb_2_3" id="jsPlumb_3_3" style="top: 77px; left: 267px; width: 150px; height: 150px; position: absolute;"></div><div class="jtk-miniview-element" jtk-node-id="decide" related-node-id="jsPlumb_2_4" id="jsPlumb_3_4" style="top: 145px; left: 672px; width: 120px; height: 120px; position: absolute;"></div><div class="jtk-miniview-element" jtk-node-id="something" related-node-id="jsPlumb_2_5" id="jsPlumb_3_5" style="top: 414px; left: 827px; width: 120px; height: 50px; position: absolute;"></div><div class="jtk-miniview-element" jtk-node-id="question2" related-node-id="jsPlumb_2_6" id="jsPlumb_3_6" style="top: 330px; left: 74px; width: 150px; height: 150px; position: absolute;"></div><div class="jtk-miniview-element" jtk-node-id="nothing" related-node-id="jsPlumb_2_7" id="jsPlumb_3_7" style="top: 558px; left: 433px; width: 100px; height: 50px; position: absolute;"></div><div class="jtk-miniview-element" jtk-node-id="f25cb2e8-627f-463b-8129-72905d716a66" related-node-id="jsPlumb_2_151" id="jsPlumb_3_8" style="top: 30px; left: 424px; width: 120px; height: 80px; position: absolute;"></div></div><div class="jtk-miniview-panner" style="top: 19.4916px; left: -2.50836px; width: 1054px; height: 550px; position: absolute; transform-origin: 0px 0px 0px; transform: scale(0.125418);"></div><div class="jtk-miniview-collapse"></div></div>
+            <div class="jtk-surface-canvas" style="top: 20.0003px; left: 20px; width: 50px; height: 50px; position: relative; transform: scale(1); transform-origin: 0% 0% 0px;"></div><div class="jtk-surface-pan jtk-surface-pan-top" style="position: absolute; left: 0px; top: 0px;">↑</div><div class="jtk-surface-pan jtk-surface-pan-bottom" style="position: absolute; left: 0px; bottom: 0px;">↓</div><div class="jtk-surface-pan jtk-surface-pan-left" style="position: absolute; left: 0px; top: 0px;">←</div><div class="jtk-surface-pan jtk-surface-pan-right" style="position: absolute; right: 0px; top: 0px;">→</div></div>
+
+           <!--  <div class="description">
+                <p>
+                    This sample application is a builder for flowcharts. Questions, actions and outputs are supported.
+                </p>
+                <ul>
+                    <li>Drag new nodes from the palette on the left onto the workspace to add nodes</li>
+                    <li>Drag from the grey border of any node to any other node to establish a link, then provide a description for the link's label</li>
+                    <li>Click a link to edit its label.</li>
+                    <li>Click the 'Pencil' icon to enter 'select' mode, then select several nodes. Click the canvas to exit.</li>
+                    <li>Click the 'Home' icon to zoom out and see all the nodes.</li>
+                </ul>
+            </div> -->
+
+            <!-- the current dataset -->
+            <div class="jtk-demo-dataset"><pre>{
+    <span class="key">"nodes":</span> [
+        {
+            <span class="key">"id":</span> <span class="string">"start"</span>,
+            <span class="key">"type":</span> <span class="string">"start"</span>,
+            <span class="key">"text":</span> <span class="string">"Start"</span>,
+            <span class="key">"left":</span> <span class="number">50</span>,
+            <span class="key">"top":</span> <span class="number">50</span>,
+            <span class="key">"w":</span> <span class="number">100</span>,
+            <span class="key">"h":</span> <span class="number">70</span>
+        },
+        {
+            <span class="key">"id":</span> <span class="string">"question1"</span>,
+            <span class="key">"type":</span> <span class="string">"question"</span>,
+            <span class="key">"text":</span> <span class="string">"Do Something?"</span>,
+            <span class="key">"left":</span> <span class="number">267</span>,
+            <span class="key">"top":</span> <span class="number">77</span>,
+            <span class="key">"w":</span> <span class="number">150</span>,
+            <span class="key">"h":</span> <span class="number">150</span>
+        },
+        {
+            <span class="key">"id":</span> <span class="string">"decide"</span>,
+            <span class="key">"type":</span> <span class="string">"action"</span>,
+            <span class="key">"text":</span> <span class="string">"Make Decision"</span>,
+            <span class="key">"left":</span> <span class="number">672</span>,
+            <span class="key">"top":</span> <span class="number">145</span>,
+            <span class="key">"w":</span> <span class="number">120</span>,
+            <span class="key">"h":</span> <span class="number">120</span>
+        },
+        {
+            <span class="key">"id":</span> <span class="string">"something"</span>,
+            <span class="key">"type":</span> <span class="string">"output"</span>,
+            <span class="key">"text":</span> <span class="string">"Do Something"</span>,
+            <span class="key">"left":</span> <span class="number">827</span>,
+            <span class="key">"top":</span> <span class="number">414</span>,
+            <span class="key">"w":</span> <span class="number">120</span>,
+            <span class="key">"h":</span> <span class="number">50</span>
+        },
+        {
+            <span class="key">"id":</span> <span class="string">"question2"</span>,
+            <span class="key">"type":</span> <span class="string">"question"</span>,
+            <span class="key">"text":</span> <span class="string">"Do Nothing?"</span>,
+            <span class="key">"left":</span> <span class="number">74</span>,
+            <span class="key">"top":</span> <span class="number">330</span>,
+            <span class="key">"w":</span> <span class="number">150</span>,
+            <span class="key">"h":</span> <span class="number">150</span>
+        },
+        {
+            <span class="key">"id":</span> <span class="string">"nothing"</span>,
+            <span class="key">"type":</span> <span class="string">"output"</span>,
+            <span class="key">"text":</span> <span class="string">"Do Nothing"</span>,
+            <span class="key">"left":</span> <span class="number">433</span>,
+            <span class="key">"top":</span> <span class="number">558</span>,
+            <span class="key">"w":</span> <span class="number">100</span>,
+            <span class="key">"h":</span> <span class="number">50</span>
+        },
+        {
+            <span class="key">"w":</span> <span class="number">120</span>,
+            <span class="key">"h":</span> <span class="number">80</span>,
+            <span class="key">"type":</span> <span class="string">"action"</span>,
+            <span class="key">"left":</span> <span class="number">424</span>,
+            <span class="key">"top":</span> <span class="number">30</span>,
+            <span class="key">"text":</span> <span class="string">"test"</span>,
+            <span class="key">"id":</span> <span class="string">"f25cb2e8-627f-463b-8129-72905d716a66"</span>
+        }
+    ],
+    <span class="key">"edges":</span> [
+        {
+            <span class="key">"source":</span> <span class="string">"start"</span>,
+            <span class="key">"target":</span> <span class="string">"question1"</span>,
+            <span class="key">"data":</span> {}
+        },
+        {
+            <span class="key">"source":</span> <span class="string">"question1"</span>,
+            <span class="key">"target":</span> <span class="string">"decide"</span>,
+            <span class="key">"data":</span> {
+                <span class="key">"label":</span> <span class="string">"yes"</span>,
+                <span class="key">"type":</span> <span class="string">"connection"</span>
+            }
+        },
+        {
+            <span class="key">"source":</span> <span class="string">"question1"</span>,
+            <span class="key">"target":</span> <span class="string">"question2"</span>,
+            <span class="key">"data":</span> {
+                <span class="key">"label":</span> <span class="string">"no"</span>,
+                <span class="key">"type":</span> <span class="string">"connection"</span>
+            }
+        },
+        {
+            <span class="key">"source":</span> <span class="string">"decide"</span>,
+            <span class="key">"target":</span> <span class="string">"nothing"</span>,
+            <span class="key">"data":</span> {
+                <span class="key">"label":</span> <span class="string">"Can't Decide"</span>,
+                <span class="key">"type":</span> <span class="string">"connection"</span>
+            }
+        },
+        {
+            <span class="key">"source":</span> <span class="string">"decide"</span>,
+            <span class="key">"target":</span> <span class="string">"something"</span>,
+            <span class="key">"data":</span> {
+                <span class="key">"label":</span> <span class="string">"Decision Made"</span>,
+                <span class="key">"type":</span> <span class="string">"connection"</span>
+            }
+        },
+        {
+            <span class="key">"source":</span> <span class="string">"question2"</span>,
+            <span class="key">"target":</span> <span class="string">"decide"</span>,
+            <span class="key">"data":</span> {
+                <span class="key">"label":</span> <span class="string">"no"</span>,
+                <span class="key">"type":</span> <span class="string">"connection"</span>
+            }
+        },
+        {
+            <span class="key">"source":</span> <span class="string">"question2"</span>,
+            <span class="key">"target":</span> <span class="string">"nothing"</span>,
+            <span class="key">"data":</span> {
+                <span class="key">"label":</span> <span class="string">"yes"</span>,
+                <span class="key">"type":</span> <span class="string">"connection"</span>
+            }
+        }
+    ],
+    <span class="key">"ports":</span> []
+}</pre></div>
+        </div>
+
+        <!-- /content -->
+
+
+        <div class="clear-footer"></div>
+<div class="full-width-container background-dark-green footer-wrapper">
+    <div class="container footer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+
+               <!--  <div class="pull-left">
+                    <img src="./jsPlumbToolkit_files/logo-jsplumb-green.png">
+                </div>
+
+                <div class="pull-left">
+                    <ul class="navbar-footer">
+                        <li><a href="https://jsplumbtoolkit.com/demos.html">DEMOS</a></li>
+<li><a href="https://jsplumbtoolkit.com/docs.html">DOCS</a></li>
+<li><a href="https://jsplumbtoolkit.com/features">FEATURES</a></li>
+<li><a href="https://jsplumbtoolkit.com/download">DOWNLOAD</a></li>
+<li><a href="https://jsplumbtoolkit.com/purchase">PURCHASE</a></li>
+<li><a href="https://jsplumbtoolkit.com/contact.html">CONTACT</a></li>
+<li><a href="https://blog.jsplumbtoolkit.com/">BLOG</a></li>
+
+                    </ul>
+                </div> -->
+                <div class="clearfix"></div>
+
+                <div class="visible-xs social-nav">
+                    <!--a href="#" class="link"><span class="icon-facebook"></span></a-->
+<a href="http://twitter.com/jsplumblib" class="link"><span class="icon-twitter"></span></a>
+<a href="http://github.com/sporritt/jsplumb/" class="link"><span class="icon-github"></span></a>
+<a href="http://www.linkedin.com/company/jsplumb" class="link"><span class="icon-linkedin"></span></a>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+               <!--  <div class="copyright divider-10">
+                    © 2016 jsPlumb Pty Ltd. All rights reserved. &nbsp;&nbsp;
+                    ABN : 31 646 922 756&nbsp;&nbsp;
+                    <a href="https://jsplumbtoolkit.com/license">license</a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://jsplumbtoolkit.com/demos/toolkit/flowchart-builder/privacy">privacy policy</a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://jsplumbtoolkit.com/contact.html">contact</a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://jsplumbtoolkit.com/roadmap.html">roadmap</a>
+                </div> -->
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6">
+
+                <div class=" hidden-xs social-nav">
+                    <!--a href="#" class="link"><span class="icon-facebook"></span></a-->
+<!-- <a href="http://twitter.com/jsplumblib" class="link"><span class="icon-twitter"></span></a>
+<a href="http://github.com/sporritt/jsplumb/" class="link"><span class="icon-github"></span></a>
+<a href="http://www.linkedin.com/company/jsplumb" class="link"><span class="icon-linkedin"></span></a> -->
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        <script src="./jsPlumbToolkit_files/jsPlumb-2.1.7.js"></script>
+<script src="./jsPlumbToolkit_files/jsPlumbToolkit-1.0.31.js"></script>
+<script src="./jsPlumbToolkit_files/demo-support.js"></script>
+
+<script src="./jsPlumbToolkit_files/app.js"></script>
+
+        <script src="./jsPlumbToolkit_files/jquery.validate.js"></script>
+<script src="./jsPlumbToolkit_files/additional-methods.js"></script>
+<script src="./jsPlumbToolkit_files/braintree.js"></script>
+<script src="./jsPlumbToolkit_files/test.js"></script>
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','./jsPlumbToolkit_files/analytics.js','ga');
+
+    ga('create', 'UA-49979015-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+    
+
+<div id="jsPlumbToolkitTemplates" style="display: none;">
+<script type="jtk" id="tmplStart">
+    <div style="left:${left}px;top:${top}px;width:${w}px;height:${h}px;" class="flowchart-object flowchart-start" onclick="clickTheDiv(this);">
+        <div style="position:relative">
+            <svg:svg width="${w}" height="${h}">
+                <svg:ellipse cx="${w/2}" cy="${h/2}" rx="${w/2}" ry="${h/2}" class="outer"/>
+                <svg:ellipse cx="${w/2}" cy="${h/2}" rx="${(w/2) - 10}" ry="${(h/2) - 10}" class="inner"/>
+                <svg:text text-anchor="middle" x="${ w / 2 }" y="${ h / 2 }" dominant-baseline="central">${text}</svg:text>
+            </svg:svg>
+        </div>
+        <jtk-source port-type="start" filter=".outer" filter-negate="true"/>
+    </div>
+</script>
+
+<script type="jtk" id="tmplAction">
+    <div style="left:${left}px;top:${top}px;width:${w}px;height:${h}px;" class="flowchart-object flowchart-action" onclick="clickTheDiv(this);">
+        <div style="position:relative">
+            <div class="node-edit node-action">
+                <i class="fa fa-pencil-square-o"/>
+            </div>
+            <div class="node-delete node-action">
+                <i class="fa fa-times"/>
+            </div>
+            <svg:svg width="${w}" height="${h}">
+                <svg:rect x="0" y="0" width="${w}" height="${h}" class="outer drag-start"/>
+                <svg:rect x="10" y="10" width="${w-20}" height="${h-20}" class="inner"/>
+                <svg:text text-anchor="middle" x="${w/2}" y="${h/2}" dominant-baseline="central">${text}</svg:text>
+            </svg:svg>
+        </div>
+        <jtk-target port-type="target"/>
+        <jtk-source port-type="action" filter=".outer"/>
+    </div>
+</script>
+
+<script type="jtk" id="tmplQuestion">
+    <div style="left:${left}px;top:${top}px;width:${w}px;height:${h}px;" class="flowchart-object flowchart-question" onclick="clickTheDiv(this);">
+        <div style="position:relative">
+            <div class="node-edit node-action">
+                <i class="fa fa-pencil-square-o"/>
+            </div>
+            <div class="node-delete node-action">
+                <i class="fa fa-times"/>
+            </div>
+            <svg:svg width="${w}" height="${h}">
+                <svg:path d="M ${w/2} 0 L ${w} ${h/2} L ${w/2} ${h} L 0 ${h/2} Z" class="outer"/>
+                <svg:path d="M ${w/2} 10 L ${w-10} ${h/2} L ${w/2} ${h-10} L 10 ${h/2} Z" class="inner"/>
+                <svg:text text-anchor="middle" x="${w/2}" y="${h/2}" dominant-baseline="central">${text}</svg:text>
+            </svg:svg>
+        </div>
+        <jtk-source port-type="question" filter=".outer"/>
+        <jtk-target port-type="target"/>
+    </div>
+</script>
+
+<script type="jtk" id="tmplOutput">
+    <div style="left:${left}px;top:${top}px;width:${w}px;height:${h}px;" class="flowchart-object flowchart-output" onclick="clickTheDiv(this);">
+        <div style="position:relative">
+            <div class="node-edit node-action">
+                <i class="fa fa-pencil-square-o"/>
+            </div>
+            <div class="node-delete node-action">
+                <i class="fa fa-times"/>
+            </div>
+            <svg:svg width="${w}" height="${h}">
+                <svg:rect x="0" y="0" width="${w}" height="${h}"/>
+                <svg:text text-anchor="middle" x="${w/2}" y="${h/2}" dominant-baseline="central">${text}</svg:text>
+            </svg:svg>
+        </div>
+        <jtk-target port-type="target"/>
+		<jtk-source port-type="output"/>
+    </div>
+</script>
+
+<!-- edit text (question or action or output or edge label) -->
+<script type="jtk" class="dlg" id="dlgText" title="Enter Text">
+    <input type="text" size="50" jtk-focus jtk-att="text" value="${text}" jtk-commit="true"/>
+</script>
+
+<script type="jtk" class="dlg" id="dlgConfirm" title="Please Confirm">
+    ${msg}?
+</script>
+
+<script type="jtk" class="dlg" id="dlgMessage" title="Message" cancel="false">
+    ${msg}
+</script>
+
+</div><div class="jtk-lasso-mask jtk-lasso-mask-top"></div><div class="jtk-lasso-mask jtk-lasso-mask-bottom"></div><div class="jtk-lasso-mask jtk-lasso-mask-left"></div><div class="jtk-lasso-mask jtk-lasso-mask-right"></div></body>
+
+
+</html>
