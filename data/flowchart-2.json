@@ -1,0 +1,20 @@
+{
+    "nodes": [
+        {
+            "id": "start",
+            "type": "start",
+            "text": "Start",
+            "left": 50,
+            "top": 50,
+            "w": 100,
+            "h": 70
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "start",
+            "target": "question1"
+        }
+    ]
+}
